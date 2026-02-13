@@ -1,6 +1,7 @@
+import { ArrowLeft, Award, Code, Sparkles, Users } from "lucide-react";
+import React from "react";
 import { Link } from "react-router";
-import { ArrowLeft, Sparkles, Award, Users, Code } from "lucide-react";
-import { ImageWithFallback } from "../components/figma/ImageWithFallback";
+import { ImageWithFallback } from "../components/ui/ImageWithFallback";
 
 export function Home() {
   const stats = [

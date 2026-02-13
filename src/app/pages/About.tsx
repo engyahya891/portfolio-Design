@@ -1,5 +1,6 @@
-import { CheckCircle2, Lightbulb, Target, Heart } from "lucide-react";
-import { ImageWithFallback } from "../components/figma/ImageWithFallback";
+import { CheckCircle2, Heart, Lightbulb, Target } from "lucide-react";
+import React from "react";
+import { ImageWithFallback } from "../components/ui/ImageWithFallback";
 
 export function About() {
   const skills = [

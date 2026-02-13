@@ -1,6 +1,6 @@
-import { useState } from "react";
 import { ExternalLink } from "lucide-react";
-import { ImageWithFallback } from "../components/figma/ImageWithFallback";
+import React, { useState } from "react";
+import { ImageWithFallback } from "../components/ui/ImageWithFallback";
 
 export function Portfolio() {
   const [selectedCategory, setSelectedCategory] = useState("all");
