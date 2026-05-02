@@ -35,7 +35,7 @@ export function Portfolio() {
       category: "mobile",
       description: "تصميم تجربة مستخدم سلسة لتطبيق توصيل",
       image: "https://images.unsplash.com/photo-1661246627162-feb0269e0c07?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2JpbGUlMjBhcHAlMjBkZXNpZ24lMjBpbnRlcmZhY2V8ZW58MXx8fHwxNzcwMzkyMjEwfDA&ixlib=rb-4.1.0&q=80&w=1080",
-      tags: ["Mobile", "UI/UX", "Figma"]
+      tags: ["Mobile", "UI/UX"]
     },
     {
       id: 4,

@@ -7,7 +7,7 @@ export function About() {
     { name: "تصميم الجرافيك", level: 95 },
     { name: "UI/UX Design", level: 90 },
     { name: "Adobe Creative Suite", level: 92 },
-    { name: "Figma / Sketch", level: 88 },
+    { name: "Sketch", level: 88 },
     { name: "HTML / CSS", level: 85 },
     { name: "React / JavaScript", level: 80 },
   ];

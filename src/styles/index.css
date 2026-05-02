@@ -1,3 +1,47 @@
 @import './fonts.css';
 @import './tailwind.css';
 @import './theme.css';
+
+
+/* 1. تعريف الألوان للوضع الفاتح (الافتراضي) */
+:root {
+    --scroll-track: #f1f5f9;       /* رمادي فاتح جداً لخلفية الشريط */
+    --scroll-thumb: #94a3b8;       /* رمادي مزرق هادئ للمؤشر */
+    --scroll-thumb-hover: #3b82f6; /* أزرق الأزرار عند مرور الماوس */
+  }
+  
+  /* 2. تعريف الألوان للوضع المظلم */
+  /* ملاحظة: إذا كنت تستخدم اسماً مختلفاً للكلاس المظلم بدلاً من .dark، قم بتغييره هنا */
+  html.dark, .dark {
+    --scroll-track: #0d1117;       /* لون داكن جداً يندمج مع خلفيتك */
+    --scroll-thumb: #1d4ed8;       /* أزرق داكن متناسق مع ألوان موقعك */
+    --scroll-thumb-hover: #3b82f6; /* أزرق ساطع عند مرور الماوس */
+  }
+  
+  /* 3. تطبيق المتغيرات على شريط التمرير (متصفحات فايرفوكس) */
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: var(--scroll-thumb) var(--scroll-track);
+  }
+  
+  /* 4. تطبيق المتغيرات على شريط التمرير (كروم، إيدج، سفاري) */
+  ::-webkit-scrollbar {
+    width: 10px; /* عرض الشريط */
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: var(--scroll-track);
+    border-radius: 8px;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: var(--scroll-thumb);
+    border-radius: 8px;
+    /* إضافة حدود بنفس لون الخلفية تعطي إيحاء بأن المؤشر يطفو (Padding وهمي) */
+    border: 2px solid var(--scroll-track); 
+    transition: background-color 0.3s ease;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--scroll-thumb-hover);
+  }
